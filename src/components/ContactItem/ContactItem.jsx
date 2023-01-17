@@ -6,7 +6,6 @@ import { getIsLoadingSelector } from 'redux/selectors';
 
 const ContactItem = ({ item }) => {
   const dispatch = useDispatch();
-
   const onDeleteCard = id => dispatch(deleteContact(id));
   const isLoading = useSelector(getIsLoadingSelector);
   return (

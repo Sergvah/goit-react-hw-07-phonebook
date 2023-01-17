@@ -8,9 +8,7 @@ import { fetchContacts } from 'redux/operations';
 const ContactsOfList = () => {
   const contacts = useSelector(getContactsSelector);
   const filter = useSelector(getFilterSelector);
-  // console.log(contacts);
   const filterLowCase = filter.toLowerCase();
-  // console.log(filterLowCase);
 
   const dispatch = useDispatch();
   useEffect(() => {
